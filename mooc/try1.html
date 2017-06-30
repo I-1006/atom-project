@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>title标签是在标签栏显示所写内容的标签</title>
+    <!--title标签是head的一部分-->
+    <style type="text/css">
+      span{color:blue}
+      table tr td,th{border:1px solid #000;}
+    </style>
+  </head>
+  <body>
+    <!--关于标题-->
+    <h1>html学习入门篇1</h1>
+    <!--关于hx标签，从h1到h6等级依次降低->
+    <!--使用p标签为body添加段落-->
+    <h2>认识标签1</h2>
+      <h3>强调语句strong和em</h3><p>stong标签默认将<strong>需要强调的语句用黑体表示</strong>而em标签则讲<em>需要强调的语句用斜体表示</em></p>
+      <h3>使用span标签为文字单独设置格式</h3><p><strong>strong\em和span的区别在于</strong>:
+        1.strong和em标签是为了强调一段话中的关键字，语义为<strong>强调</strong>。
+        2. 而<span>span标签</span>是没有语义的其作用就是为了设置<em>单独的样式</em>(需要对在head标签内对span进行设置，使用<span>style<span>标签)</p>
+      <h3>q标签，短文本引用</h3> <p>1.引用的句子不需要加双引号，会自动添加。2.<q>标签的重点是它的语义：引用。</q></p>
+      <h3>blockquote标签,长文本引用</h3><p>当所需要引用的句子较长时，比如引用一句诗使用blockquore标签。blockquote标签采用缩进句式如<blockquote>苟利国家生死以，岂因祸福避趋之</blockquote></p>
+      <h3>br/标签,分行显示文本</h3><p>该标签相当于enter键，如：<br/>苟利国家生死以，<br/>岂因祸福避趋之。</p>
+      <h3>&|nbsp，空格</h3><p>在html代码中使用空格没有作用，要想输入空格必须输入&nbsp&nbsp(&|nbsp)&nbsp</p>
+      <h3>hr/标签，水平横线</h3><p><hr/>/hr标签和/br标签同样是空标签，只有一个开始没有结束标签</p>
+      <h3>address标签，联系地址信息</h3><p>网站的联系地址、公司地址、电子邮件地址...等等，这些常用address标签如电子科技啊大学的地址：<address>西源大道1006号</address></p>
+      <h3>code标签，插入一行代码</h3><p><code>{background-image:linear-gradient(left, red 100px, yellow 200px);}</code><br/>若插入数行代码可以使用pre标签，如：
+      <pre>
+        while(i)
+        printf(:"hello world");
+        break;</pre></p>
+    <h2>认识标签2</h2>
+      <h3>ul和li标签,没有前后顺序的信息列表</h3><p>也可以视作列表信息。常常见到小的新闻栏使用这种标签。如：<ul><li>震惊！活了前年的蛤蟆竟然！</li><li>开局只有一人一狗，装备全靠捡</li></ul></p>
+      <h3>ol和li标签，有前后顺序的信息列表</h3><p>如steam游戏畅销榜<h4>今日热销</h4><ol><li>荣耀战魂</li><li>生化危机7</li><li>无人深空</li></ol></p>
+      <h3>div标签，划分单独的逻辑部分</h3><p>div标签可以视作一个容器。其中的内容则通过css来显示。</p>
+      <h3>给div命名以增强逻辑性</h3><p><div id="hostlist"><h4>热门课程排行榜</h4><ol><li>前端开发面试心法 </li><li>零基础学习html</li><li>javascript全攻略</li></ol></div>
+        <div id="leaminglns"><h4>web前端开发导学课程</h4><ul><li>网页专业名词大扫盲 </li><li>网站职位定位指南</li><li>为您解密Yahoo网站制作流程</li></ul></div></p>
+      <h3>table标签，表格。caption标签，给表格加表题和摘要（不显示。目的是增强语义）</h3><p>1.元素：table,tbody(使表格不必等完全加载完就可以分块显示),tr（表格的一行）,th（表头的一格）,td(一格)如：
+        <table summary="表格简介文字"><tbody>
+          <caption>班级状况</caption>
+          <tr><th>班级</th><th>学生数</th><th>平均成绩</th></tr>
+          <tr><td>一班</td><td>30</td><td>89</td></tr>
+          <tr><td>二班</td><td>35</td><td>85</td></tr>
+          <tr><td>三班</td><td>32</td><td>80</td></tr>
+        </tbody></table></p>
+      <h3>用css给表格加边框</h3><p><table summary=0>
+      <tr><th>班级</th><th>学生数</th><th>平均成绩</th></tr>
+      <tr><td>一班</td><td>30</td><td>89</td></tr>
+      <tr><td>二班</td><td>35</td><td>85</td></tr>
+      <tr><td>三班</td><td>32</td><td>80</td></tr></table></p>
+    <h2>认识标签3</h2>
+      <h3>a标签，实现超链接</h3><p>a标签的语法为<a href="目标网址" title="鼠标滑过显示的文本">/a href="目标网址" title="鼠标滑过显示的文本"/<a><br/>若要使超链接在点击后在新标签中打开则使用target=“_blank”</p>
+      <h3>使用malito标签链接email地址，使访问者快速发送邮件</h3><p><a href="mailto:fireworks-1006@outlook.com?cc=1832075430@qq.com&bcc=asddd10@hotmail.com&subject=主题&body=邮件内容">对此影评有何感想，发送邮件给我</a></p>
+      <h3>img标签，为网页插入图片</h3><p>|img src="图片地址" alt="下载失败时的替换文本" title = "提示文本"|</p>
+</body>
+</html>
