@@ -54,9 +54,84 @@
       <h3>使用malito标签链接email地址，使访问者快速发送邮件</h3><p><a href="mailto:fireworks-1006@outlook.com?cc=1832075430@qq.com&bcc=asddd10@hotmail.com&subject=主题&body=邮件内容">对此影评有何感想，发送邮件给我</a></p>
       <h3>img标签，为网页插入图片</h3><p>|img src="图片地址" alt="下载失败时的替换文本" title = "提示文本"|</p>
     <h2>表单标签与浏览者交互</h2>
-      <p>form成队出现\action浏览者输入的数据被传送到的地方，如一个php页面\method数据传送的方式（get/post）<br/>如form   method="传送方式"   action="服务器文件"<ol>
-        <li>所有表单控件（文本框、文本域、按钮单选框、复选框等）必须放在form内</li>
-        <li>method(get/post)是后端程序员的问题</li>
-      </ol></p>
-</body>
+      <p><h3>一级标签form</h3>form成队出现\action浏览者输入的数据被传送到的地方，如一个php页面\method数据传送的方式（get/post）<br/>如form   method="传送方式"   action="服务器文件"
+        <ol>
+          <li>所有表单控件（文本框、文本域、按钮单选框、复选框等）必须放在form内</li>
+          <li>method(get/post)是后端程序员的问题</li>
+        </ol></p>
+      <p><h3>文本输入框、密码输入框、提交按钮\重置按钮</h3>
+        <h4>语法</h4>input type="text/password/submit(仅此有提交作用)/reset(仅此有重置作用)" name="名称" value="文本" /
+        <ol><li>type标签：<ul><li>type="text"时，输入框为文本输入框。</li><li>type="password"时，输入框为密码输入框。</li></ul></li>
+            <li>name标签：为文本框命名，以备后台程序ASP、PHP使用。</li>
+            <li>value:为文本输入框设置默认值。（一般起提示作用）</li></ol>
+        <form  method="post" action="save.php">账户: <input type="text" name="myName" value="姓名"></br>密码: <input type="password" name="pass" value=***>  <input type="reset" value="重置"  /><input type="submit" value="提交"  /></form></p>
+      <p><h3>textarea文本域</h3>当用户需要在表单中输入大段文字时，需要用到文本输入域。
+        <h4>语法：</h4>
+          |textarea  rows="行数" cols="列数"|文本|/textarea|
+          <ol><li>textarea标签成对出现。其间可以输入默认值。</li>
+              <li>cols：多行输入域的列数。</li>
+              <li>rows：多行输入域的行数。</li></ol>
+        <h4>举例</h4>
+          <form action="save.php" method="post" ><label>个人简介：</label>
+          <textarea cols="50" rows="10">在这里输入内容...</textarea>
+          <input type="submit" value="确定"  name="submit" />
+          <input type="reset" value="重置"  name="reset" />
+          </form></p>
+      <p><h3>使用单选框、复选框，让用户选择</h3>设计调查表时使用选择框
+        <h4>语法</h4><em>input   type="radio/checkbox"   value="值"    name="名称"   checked="checked"/</em>
+        <ol>
+          <li>type:<ul><li>当type="radio"时，控件为单选框。</li>
+                        <li>当type="checkbox"时，控件为复选框。</li></ul></li>
+          <li>valuc：提交数据到服务器的值（后台程序php使用）</li>
+          <li>namc：为控件命名，以备后台程序ASP、PHP使用</li>
+          <li>checked:当设置checked="checked"时，该选项被默认选中</li></ol>
+        <h4>举例</h4>
+          <form name="iForm" method="post" action="save.php">
+          你是否喜欢旅游？<br/>
+          <input type="radio" name="radiolove" value="喜欢" checked="checked">喜欢
+          <input type="radio" name="radiolove" value="不喜欢">不喜欢
+          <input type="radio" name="radiolove" value="无所谓">无所谓
+          你对哪些运动感兴趣？<br/>
+          <input type="checkbox" name="checkbox1" value="跑步">跑步
+          <input type="checkbox" name="checkbox2" value="打球" checked="checked">打球
+          <input type="checkbox" name="checkbox3" value="登山" checked="checked">登山
+          <input type="checkbox" name="checkbox4" value="健身">健身</p>
+          </form>
+      <p><h3>使用下拉框列表节省空间</h3>
+        <ol>
+          <li>value:|option value='提交值(向服务器提交的值)'|选项(显示的值)|</option>|</li>
+          <li>selected="selected":默认选中</li>
+        </ol>
+        <p><form action="save.php" method="post" >
+          <label>爱好:</label>
+          <select>
+            <option value="看书">看书</option>
+            <option value="旅游"selected="selected">旅游</option>
+            <option value="运动">运动</option>
+            <option value="购物">购物</option>
+          </select>
+        </form></p>
+        <p>select标签中设置multiple="multiple"可以实现多选功能
+          <form action="save.php" method="post" >
+            <label>爱好:</label>
+            <select multiple="multiple">
+              <option value="看书">看书</option>
+              <option value="旅游">旅游</option>
+              <option value="运动">运动</option>
+              <option value="购物">购物</option>
+            </select>
+        </form></p></p>
+      <p><h3>label标签</h3>
+        label标签的作用是位数表用户改进可用性：单击标签即可自动选择相关联表单控件。例如：
+        <form>
+        <label for="male">男</label><input type="radio" name="gender" id="male" /><br/>
+        <label for="female">女</label><input type="radio" name="gender" id="female" /><br/>
+        <label for="email">输入你的邮箱地址</label><input type="email" id="email" placeholder="Enter email"></form></p>
+      <p><h3>总结</h3>
+        <ul><li>输入框：text、password、email</li>
+            <li>文本域：textarea</li>
+            <li>选框：radio、checkbox</li>
+            <li>下拉框：value、option、select(multiple)</li>
+        </ul></p>
+  </body>
 </html>
