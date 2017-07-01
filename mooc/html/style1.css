@@ -1,0 +1,16 @@
+p2{
+   color:green;
+   font-size:20px;
+}
+.stress{
+  font-size:12px;
+  color:red;
+  font-weight: inherit;
+}
+#stress{
+  font-size:12px;
+  color:red;
+  font-weight: bold;
+}
+beside,.first>span{border: 1px solid red}
+a:hover{color:red; font-size: 24px}
