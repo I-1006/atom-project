@@ -5,7 +5,7 @@
     <title>html+css学习入门篇2</title>
     <style type="text/css">
   div1{font-size:15px;/*设置文本字号15px*/color:red;font-weight:bold;/*设置文字颜色为红色*/}
-  p1{color:yellow;text-indent:2em}
+  p1{color:yellow;}
   * {font-size:15px;}
     </style>
   <link href="style2.css" rel="stylesheet" type="text/css" />
@@ -17,19 +17,19 @@
       <h3>内联式css样式</h3>
         <p style="color:blue;font-size:12px">这里文字是蓝色，通过内联式css得到，必须写在开始标签里。</p>
       <h3>嵌入式css样式</h3>
-        <p1>这里的黄色文字通过嵌入式css得到，写在head中的style之间</p1>
+        <p><p1>这里的黄色文字通过嵌入式css得到，写在head中的style之间</p1></p>
       <h3>外部css样式</h3>
-        <p2>这里的绿色文字通过外联式css得到。写在单独的css文件内。通过写在head中的link命令联系</p2>
+        <p><p2>这里的绿色文字通过外联式css得到。写在单独的css文件内。通过写在head中的link命令联系</p2><p>
       <h3>三种方法的优先级</h3>
         <p>当嵌入式css在外联式css之后时，有内联式>嵌入式>外联式</p>
     <h2>css选择器</h2>
       <h3>类选择器和id选择器</h3>
         <p><span class=stress>类选择器使用.stress类似的命名方式，并用class来采用</span></br>
-        <span id=stress>id选择器使用#stress类似的命名方法，以id来采用</span>
+        <span id=stress>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspid选择器使用#stress类似的命名方法，以id来采用</span>
         二者的区别在于：
         <ol>
           <li>类选择器可以多次使用，而id选择器只能使用一次</li>
-          <li>类选择器可以给一个元素同时设置数个格式，id选择器不行</li></p>
+          <li>类选择器可以给一个元素同时设置数个格式，id选择器不行</li></ol></p>
       <h3>子选择器</h3>
         <p class="first">用>来选择指定标签元素的第一代元素,如：三年级时，<span>我还是一个胆小如鼠的小女孩</span></p>
       <h3>包含选择器</h3>
@@ -47,7 +47,7 @@
       <h3>特殊性(权值)</h3>
         <p>标签的权值为1，类选择符的权值为10，ID选择符的权值最高为100。如以下代码：
         <pre>
-              p{color:red;} /*权值为1*/
+           p{color:red;} /*权值为1*/
               p span{color:green;} /*权值为1+1=2*/
               .warning{color:white;} /*权值为10*/
               p span.warning{color:purple;} /*权值为1+1+10=12*/
@@ -59,8 +59,8 @@
         <code>p{color:red!important;}</code></p>
     <h2>css格式化排版</h2>
       <h3>文字排版</h3>
-        字体:font-family 字号:font-size 颜色:color 粗体:font-weight 斜体:font-style:italic 下划线:text-decoration:underline 删除线:text-decoration:line-through
+        <p>字体:font-family 字号:font-size 颜色:color 粗体:font-weight 斜体:font-style:italic 下划线:text-decoration:underline 删除线:text-decoration:line-through</p>
       <h3>段落排版</h3>
-        缩进:text-indent:2em 行高:line-height:1.5em 文字、字母字间距:leter-spacing 单词间距:word-spacing 对齐:text-align:center/left/right
+        <p>缩进:text-indent:2em 行高:line-height:1.5em 文字、字母字间距:leter-spacing 单词间距:word-spacing 对齐:text-align:center/left/right</p>
   </body>
 </html>
