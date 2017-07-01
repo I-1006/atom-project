@@ -1,6 +1,7 @@
 p2{
    color:green;
    font-size:20px;
+   text-indent: 2em;
 }
 .stress{
   font-size:12px;
@@ -13,4 +14,6 @@ p2{
   font-weight: bold;
 }
 beside,.first>span{border: 1px solid red}
-a:hover{color:red; font-size: 24px}
+form,caption{text-align: center;}
+h1,h2,h3,h4,h5{text-align:center;}
+p,pre,em,label{text-indent: 2em}

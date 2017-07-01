@@ -5,7 +5,7 @@
     <title>html+css学习入门篇2</title>
     <style type="text/css">
   div1{font-size:15px;/*设置文本字号15px*/color:red;font-weight:bold;/*设置文字颜色为红色*/}
-  p1{color:yellow;}
+  p1{color:yellow;text-indent:2em}
   * {font-size:15px;}
     </style>
   <link href="style2.css" rel="stylesheet" type="text/css" />
@@ -41,6 +41,26 @@
         实际上:hover可以用在任意标签上，如p:hover,但兼容性问题存在，目前仅有a:hover比较常用</p>
       <h3>分组选择器</h3>
         <p>如beside,.first>span{border: 1px solid red}</p>
-
+    <h2>css的继承、层叠和特殊性</h2>
+      <h3>继承</h3>
+        <p>css的有些样式是具有继承性的，也有一些不具有继承性</p>
+      <h3>特殊性(权值)</h3>
+        <p>标签的权值为1，类选择符的权值为10，ID选择符的权值最高为100。如以下代码：
+        <pre>
+              p{color:red;} /*权值为1*/
+              p span{color:green;} /*权值为1+1=2*/
+              .warning{color:white;} /*权值为10*/
+              p span.warning{color:purple;} /*权值为1+1+10=12*/
+              #footer .note p{color:yellow;} /*权值为100+10+1=111*/</pre></p>
+      <h3>层叠</h3>
+        <p>层叠就是在html文件中对于同一个元素可以有多个css样式存在，当有相同权重的样式存在时，会根据这些css样式的前后顺序来决定，处于最后面的css样式会被应用。</p>
+      <h3>重要性</h3>
+        <p>我们需要为某些样式设定最高权值则使用!important，写在分号之前。如：</br>
+        <code>p{color:red!important;}</code></p>
+    <h2>css格式化排版</h2>
+      <h3>文字排版</h3>
+        字体:font-family 字号:font-size 颜色:color 粗体:font-weight 斜体:font-style:italic 下划线:text-decoration:underline 删除线:text-decoration:line-through
+      <h3>段落排版</h3>
+        缩进:text-indent:2em 行高:line-height:1.5em 文字、字母字间距:leter-spacing 单词间距:word-spacing 对齐:text-align:center/left/right
   </body>
 </html>
