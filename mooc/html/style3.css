@@ -1,0 +1,7 @@
+p{background: grey;text-indent: 2em;display: block}
+code{text-indent: 2em}
+.li1{border-bottom:1px dotted #ccc;width:400px;height:60px;}
+ol{display: inline-block;}
+.box1{ width:100px;height:20px;padding:100px;border:1px solid red;margin:30px;display: inline-block;}
+.div1{border:2px red solid;width:200px;height:40px;float:left;}
+.div2{border:2px red solid;width:200px;height:40px;float:right;}
