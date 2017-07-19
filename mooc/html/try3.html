@@ -23,14 +23,17 @@
         <div><div class="box1">padding,填充</div><div class="box2">margin,边界</div></div>
         <div class="box3"></div>
     <h2>css布局模型</h2>
-        <div class="div0">CSS包含3种基本的布局模型，用英文概括为：Flow、Layer 和 Float。在网页中，元素有三种布局模型：<ol><li>流动模型（Flow）</li><li>浮动模型 (Float)</li><li>层模型（Layer）</li></ol></div>
-        <p>块状元素都会在所处的包含元素内自上而下按顺序垂直延伸分布，因为在默认状态下，块状元素的宽度都为100%。实际上，块状元素都会以行的形式占据位置。如右侧代码编辑器中三个块状元素标签(div，h1，p)宽度显示为100%。</p>
-        <p>第二点，在流动模型下，内联元素都会在所处的包含元素内从左到右水平分布显示。（内联元素可不像块状元素这么霸道独占一行）右侧代码编辑器中内联元素标签a、span、em、strong都是内联元素。</p>
-        <h3>浮动模型float</h3>
-          <p>任何元素在默认情况下是不能浮动的，但可以用 CSS 定义为浮动，如 div、p、table、img 等元素都可以被定义为浮动。如下：</p>
-          <div class="div1">栏目1</div><div class="div2">栏目2</div>
-        <h3 class=p1>层模型——精确定位layer</h3>
-          <div class="p2"><span style="margin:30px auto;border:1px solid red;display:block;width:300px;text-indent:2em">层模型有三种形式</span><ol style="margin:0px auto;border:1px solid red;display:block;width:260px"><li>绝对定位(position: absolute)</li><li>相对定位(position: relative)</li><li>固定定位(position: fixed)</li></ol></div>
-        <h3></h3>
+      <div class="div0">CSS包含3种基本的布局模型，用英文概括为：Flow、Layer 和 Float。在网页中，元素有三种布局模型：<ol><li>流动模型（Flow）</li><li>浮动模型 (Float)</li><li>层模型（Layer）</li></ol></div>
+      <p>块状元素都会在所处的包含元素内自上而下按顺序垂直延伸分布，因为在默认状态下，块状元素的宽度都为100%。实际上，块状元素都会以行的形式占据位置。如右侧代码编辑器中三个块状元素标签(div，h1，p)宽度显示为100%。</p>
+      <p>第二点，在流动模型下，内联元素都会在所处的包含元素内从左到右水平分布显示。（内联元素可不像块状元素这么霸道独占一行）右侧代码编辑器中内联元素标签a、span、em、strong都是内联元素。</p>
+      <h3>浮动模型float</h3>
+        <p>任何元素在默认情况下是不能浮动的，但可以用 CSS 定义为浮动，如 div、p、table、img 等元素都可以被定义为浮动。如下：</p>
+        <div class="div1">栏目1</div><div class="div2">栏目2</div>
+      <h3 class=p1>层模型——精确定位layer</h3>
+        <div class="p2"><span style="margin:50px auto;border:1px solid red;display:block;width:300px;text-indent:2em">层模型有三种形式</span><ol style="margin:0px auto;border:1px solid red;display:block;width:260px"><li>绝对定位(position: absolute)</li><li>相对定位(position: relative)</li><li>固定定位(position: fixed)</li></ol></div>
+      <h3 class="p1">块状元素水平居中总结</h3>
+        <div class="container"><ul><li>定宽块状元素 width固定 设置左右margin为auto</li><li>不定宽块状元素</li><li>通过给父元素设置 float，然后给父元素设置 position:relative 和 left:50%，子元素设置 position:relative 和 left: -50% 来实现水平居中。</li></ul></div>
+      <h3 class="p1">垂直居中</h3>
+        <div class=container2><ul><li>使用插入 table  (包括tbody、tr、td)标签，同时设置 vertical-align：middle。</li></ul></div>
   </body>
 </html>
