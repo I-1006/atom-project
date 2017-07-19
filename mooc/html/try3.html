@@ -10,25 +10,27 @@
   <body>
     <h1 style="background:pink;height:50px;text-align:center">css盒模型与布局</h1>
     <h2>元素分类</h2>
-      <p><strong>块状元素、内联元素、内敛块状元素</strong><blockquote style="background:Aliceblue"><em>常用的块状元素有：</em>div、p、h1...h6、ol、ul、dl、table、address、blockquote 、form<em>常用的内联元素有：</em>a、span、br、i、em、strong、label、q、var、cite、code<em>常用的内联块状元素有：</em>img、input</blockquote></p>
+      <div class="div0"><strong>块状元素、内联元素、内敛块状元素</strong><blockquote style="background:Aliceblue;display:inline-block"><em>常用的块状元素有：</em>div、p、h1...h6、ol、ul、dl、table、address、blockquote 、form<em>常用的内联元素有：</em>a、span、br、i、em、strong、label、q、var、cite、code<em>常用的内联块状元素有：</em>img、input</blockquote></div>
       <h3>设置元素类别</h3>
         <p>使用display:inline/block/inlineblock</p>
     <h2>盒模型</h2>
       <h3>边框</h3>
-        <p>如下面代码为 div 来设置边框粗细为 2px、样式为实心的、颜色为红色的边框：</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<code>div{border:2px  solid  red;}</code></p>
+        <p>如下面代码为 div 来设置边框粗细为 2px、样式为实心的、颜色为红色的边框：</br><span style="margin-left:30px"><code>div{border:2px  solid  red;}</code></span></p>
       <h3>宽度和高度</h3>
-        <p><ol><li class="li1">盒模型宽度和高度和我们平常所说的物体的宽度和高度理解是不一样的，css内定义的宽（width）和高（height），指的是填充以里的内容范围。</li>
-          <li class="li1">块状元素有一个特点之一：在不设置宽度的情况下，显示为父容器的100%。</li></ol></p>
+        <div class="div0"><ol><li class="li1">盒模型宽度和高度和我们平常所说的物体的宽度和高度理解是不一样的，css内定义的宽（width）和高（height），指的是填充以里的内容范围。</li>
+          <li class="li1">块状元素有一个特点之一：在不设置宽度的情况下，显示为父容器的100%。</li></ol></div>
       <h3>填充</h3>
-        <p><div class="box1">padding,填充</div><div class="box1">margin,边界</div></p>
+        <div><div class="box1">padding,填充</div><div class="box2">margin,边界</div></div>
+        <div class="box3"></div>
     <h2>css布局模型</h2>
-        <p>CSS包含3种基本的布局模型，用英文概括为：Flow、Layer 和 Float。在网页中，元素有三种布局模型：<ol><li>流动模型（Flow）</li><li>浮动模型 (Float)</li><li>层模型（Layer）</li></ol></p>
+        <div class="div0">CSS包含3种基本的布局模型，用英文概括为：Flow、Layer 和 Float。在网页中，元素有三种布局模型：<ol><li>流动模型（Flow）</li><li>浮动模型 (Float)</li><li>层模型（Layer）</li></ol></div>
         <p>块状元素都会在所处的包含元素内自上而下按顺序垂直延伸分布，因为在默认状态下，块状元素的宽度都为100%。实际上，块状元素都会以行的形式占据位置。如右侧代码编辑器中三个块状元素标签(div，h1，p)宽度显示为100%。</p>
         <p>第二点，在流动模型下，内联元素都会在所处的包含元素内从左到右水平分布显示。（内联元素可不像块状元素这么霸道独占一行）右侧代码编辑器中内联元素标签a、span、em、strong都是内联元素。</p>
         <h3>浮动模型float</h3>
           <p>任何元素在默认情况下是不能浮动的，但可以用 CSS 定义为浮动，如 div、p、table、img 等元素都可以被定义为浮动。如下：</p>
-          <div class="div1">栏目1</div><div class="div1">栏目2</div>
-        <h3>层模型——精确定位layer</h3>
-          <p>层模型有三种形式：<ol><li>绝对定位(position: absolute)</li><li>相对定位(position: relative</li><li>固定定位(position: fixed)</li></ol></p>
+          <div class="div1">栏目1</div><div class="div2">栏目2</div>
+        <h3 class=p1>层模型——精确定位layer</h3>
+          <div class="p2"><span style="margin:30px auto;border:1px solid red;display:block;width:300px;text-indent:2em">层模型有三种形式</span><ol style="margin:0px auto;border:1px solid red;display:block;width:260px"><li>绝对定位(position: absolute)</li><li>相对定位(position: relative)</li><li>固定定位(position: fixed)</li></ol></div>
+        <h3></h3>
   </body>
 </html>
