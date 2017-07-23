@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>html学习1</title>
+    <script type="text/javascript">
+    var score=80;
+    if(score>=60){document.write('及格')}else {document.write('不及格')};
+    var code1="cocument.write()";
+    function reflect1(){alert('点击后执行')};
+    function reflect2(){document.write("code1"+"的作用")}
+    function reflect3(){var mymessage=confirm("你爱不爱我？");if(mymessage==true){document.write("我也爱你!");}else{document.write("你在骗我!");}}
+    </script>
+    <script src="script1.js"></script>
+  </head>
+  <body>
+    <h1>关于javascript</h1>
+      <p>javascript作为一种脚本语言可以放在html页面中任何位置，但是浏览器解释html时是按先后顺序的，所以前面的script就先被执行。比如进行页面显示初始化的js必须放在head里面，因为初始化都要求提前进行（如给页面body设置css等）；而如果是通过事件调用执行的function那么对位置没什么要求的。</p>
+      <p><strong>JavaScript语句是发给浏览器的命令。这些命令的作用是告诉浏览器要做的事情。</strong></p>
+      <capture style="float:left"><input type="button"  value="点击我" onclick="reflect1()"></capture>
+      <capture style="float:right"><input type="button"  value="点击我" onclick="reflect2()"></capture>
+      <div style="margin:0px auto;border:1px red solid;text-align:center;"><input name="button" type="button" onClick="reflect3()" value="科学读心" /></div>
+  </body>
+</html>
