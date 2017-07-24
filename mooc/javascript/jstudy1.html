@@ -8,9 +8,12 @@
     var score=80;
     if(score>=60){document.write('及格')}else {document.write('不及格')};
     var code1="cocument.write()";
-    function reflect1(){alert('点击后执行')};
-    function reflect2(){document.write("code1"+"的作用")}
-    function reflect3(){var mymessage=confirm("你爱不爱我？");if(mymessage==true){document.write("我也爱你!");}else{document.write("你在骗我!");}}
+    function reflect1(){alert('点击后执行')};//警告
+    function reflect2(){documewrite("code1"+"的作用")}//输出内容
+    function reflect3(){var mymessage=confirm("你爱不爱我？");if(mymessage==true){document.write("我也爱你!");}else{document.write("你在骗我!");}}//确认
+    function reflect4(){var score;score = prompt("请输入你的成绩");if(score>=90){document.write("你很棒!");}else if(score>=75){document.write("不错吆!");}else if(score>=60){document.write("要加油!");}else{document.write("要努力了!");}}//提问
+    function reflect5(){window.open('http://www.imooc.com','width=600,height=400','top=100px')};//打开新窗口
+    function unreflect5(){reflect5.close();}
     </script>
     <script src="script1.js"></script>
   </head>
@@ -20,6 +23,9 @@
       <p><strong>JavaScript语句是发给浏览器的命令。这些命令的作用是告诉浏览器要做的事情。</strong></p>
       <capture style="float:left"><input type="button"  value="点击我" onclick="reflect1()"></capture>
       <capture style="float:right"><input type="button"  value="点击我" onclick="reflect2()"></capture>
-      <div style="margin:0px auto;border:1px red solid;text-align:center;"><input name="button" type="button" onClick="reflect3()" value="科学读心" /></div>
+      <div style="margin:0px auto;border:1px red solid;text-align:center;"><input name="button" type="button" onClick="reflect3()" value="科学读心"></div>
+      <input name="button" type="button" onClick="reflect4()" value="点击我，对成绩做评价!">
+      <input name="button" type="button" onClick="reflect5()" value="点击我，打开新窗口!">
+      <input name="button" type="button" onClick="unreflect5()" value="点击我，关闭新窗口!">
   </body>
 </html>
