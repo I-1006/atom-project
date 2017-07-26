@@ -5,14 +5,8 @@
 <title>javascript</title>
 <style type="text/css">
 body{font-size:12px;}
-#txt{
-    height:400px;
-    width:600px;
-	border:#333 solid 1px;
-	padding:5px;}
-p{
-	line-height:18px;
-	text-indent:2em;}
+#txt{height:400px;width:600px;border:#333 solid 1px;padding:5px;}
+p{line-height:18px;text-indent:2em;}
 </style>
 </head>
 <body>
@@ -34,36 +28,15 @@ p{
   <script type="text/javascript">
   //定义"改变颜色"的函数
   var txt=document.getElementById("txt");
-  function colorchange()
-  {
-    txt.style.color="red";
-    txt.style.backgroundColor="#ccc";
-  }
+  function colorchange(){txt.style.color="red";txt.style.backgroundColor="#ccc";}
   //定义"改变宽高"的函数
-  function sizechange()
-  {
-    txt.style.width="300px";
-    txt.style.height="300px";
-  }
+  function sizechange(){txt.style.width="300px";txt.style.height="300px";}
   //定义"隐藏内容"的函数
-  function hide()
-  {
-    txt.style.display="none";
-  }
+  function hide(){txt.style.display="none";}
   //定义"显示内容"的函数
-  function display()
-  {
-    txt.style.display="block";
-  }
+  function display(){txt.style.display="block";}
   //定义"取消设置"的函数
-  function cancel()
-  {
-    var message=confirm("Are you sure?");
-    if(message==true)
-    {
-      txt.removeAttribute('style');
-    }
-  }
+  function cancel(){var message=confirm("Are you sure?");if(message==true){txt.removeAttribute('style');}}
   </script>
 </body>
 </html>
